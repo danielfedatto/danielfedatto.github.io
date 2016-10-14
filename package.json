@@ -1,0 +1,24 @@
+{
+  "name": "danielfedatto.github.io",
+  "version": "1.0.0",
+  "description": "web site I created for myself :D",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielFedatto/danielfedatto.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielFedatto/danielfedatto.github.io/issues"
+  },
+  "homepage": "https://github.com/DanielFedatto/danielfedatto.github.io#readme"
+}

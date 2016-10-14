@@ -1,0 +1,409 @@
+/*! Daniel Fedatto Front end developer */
+@font-face {
+  font-family: 'EchinosParkScript';
+  src: url("../fonts/EchinosParkScript/EchinosParkScript.eot?#iefix") format("embedded-opentype"), url("../fonts/EchinosParkScript/EchinosParkScript.woff") format("woff"), url("../fonts/EchinosParkScript/EchinosParkScript.ttf") format("truetype"), url("../fonts/EchinosParkScript/EchinosParkScript.svg#EchinosParkScript") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Thin';
+  src: url("../fonts/Gotham-Thin/Gotham-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Thin/Gotham-Thin.otf") format("opentype"), url("../fonts/Gotham-Thin/Gotham-Thin.woff") format("woff"), url("../fonts/Gotham-Thin/Gotham-Thin.ttf") format("truetype"), url("../fonts/Gotham-Thin/Gotham-Thin.svg#Gotham-Thin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url("../fonts/Gotham-Book/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book/Gotham-Book.otf") format("opentype"), url("../fonts/Gotham-Book/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book/Gotham-Book.svg#Gotham-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url("../fonts/Gotham-Bold/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold/Gotham-Bold.otf") format("opentype"), url("../fonts/Gotham-Bold/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold/Gotham-Bold.svg#Gotham-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+div:after, section:after, nav:after, ol:after, form:after, ul:after, dl:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden; }
+
+.contentAll {
+  width: 1200px;
+  margin: auto;
+  position: relative; }
+
+.titleD {
+  width: 100%;
+  padding-bottom: 6px;
+  float: left;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  color: #191b1e;
+  text-transform: uppercase;
+  font-family: 'Gotham-Bold'; }
+
+.titleD:before {
+  width: 80px;
+  height: 5px;
+  margin-left: -40px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  background-color: #1776ff;
+  content: ""; }
+
+.textD {
+  width: 100%;
+  float: left;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #31353b;
+  font-family: 'Gotham-Book'; }
+
+.btn {
+  padding: 0px 20px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+  background-color: #1776ff;
+  color: #FFFFFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-family: 'Gotham-Book'; }
+  .btn:hover {
+    background-color: #1464d8; }
+
+.colFullAll {
+  width: 100%;
+  float: left;
+  position: relative; }
+
+.firstPage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #1776ff;
+  background: -moz-linear-gradient(45deg, #1776ff 0%, #72c591 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #1776ff), color-stop(100%, #72c591));
+  background: -webkit-linear-gradient(45deg, #1776ff 0%, #72c591 100%);
+  background: -o-linear-gradient(45deg, #1776ff 0%, #72c591 100%);
+  background: -ms-linear-gradient(45deg, #1776ff 0%, #72c591 100%);
+  background: linear-gradient(45deg, #1776ff 0%, #72c591 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1776ff', endColorstr='#72c591',GradientType=1 ); }
+  .firstPage .name {
+    width: 100%;
+    height: 156px;
+    margin-top: -78px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    color: #FFFFFF;
+    font-size: 124px;
+    text-align: center;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #ffffff;
+    font-family: 'EchinosParkScript'; }
+  .firstPage .prof {
+    width: 100%;
+    margin-bottom: -120px;
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Gotham-Thin'; }
+
+.aboutMe {
+  width: 100%;
+  min-height: 725px;
+  padding-top: 90px;
+  position: relative;
+  background-color: #FFFFFF; }
+  .aboutMe .titleD {
+    margin-bottom: 100px; }
+  .aboutMe .holdCont {
+    width: 100%;
+    padding-left: 420px;
+    float: left;
+    position: relative; }
+  .aboutMe .img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 0px; }
+    .aboutMe .img img {
+      width: 100%; }
+  .aboutMe .textHold {
+    width: 100%;
+    max-width: 690px;
+    float: left;
+    position: relative; }
+  .aboutMe .firstLine {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #191b1e;
+    font-family: 'Gotham-Bold'; }
+  .aboutMe .textD {
+    line-height: 40px; }
+
+.mySkills {
+  width: 100%;
+  min-height: 518px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  position: relative;
+  background-color: #F7F5F5; }
+  .mySkills .titleD {
+    margin-bottom: 40px; }
+  .mySkills .textD {
+    margin-bottom: 95px;
+    text-align: center; }
+  .mySkills .skillsList {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-right: 20px; }
+    .mySkills .skillsList:after {
+      content: ""; }
+    .mySkills .skillsList .box {
+      width: 14.28%;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      float: left; }
+    .mySkills .skillsList .skill {
+      width: 100%;
+      float: left;
+      position: relative;
+      border: 1px solid #a6a6a6; }
+      .mySkills .skillsList .skill .imgBox {
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        line-height: 0px; }
+        .mySkills .skillsList .skill .imgBox img {
+          width: 100%; }
+      .mySkills .skillsList .skill .text {
+        width: 100%;
+        height: 36px;
+        margin-top: -18px;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        font-size: 26px;
+        color: #191b1e;
+        text-align: center;
+        font-family: 'Gotham-Bold'; }
+
+.otherSkills {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px; }
+  .otherSkills .titleD {
+    margin-bottom: 34px;
+    font-size: 20px; }
+  .otherSkills .textD {
+    margin-bottom: 50px;
+    text-align: center; }
+  .otherSkills .listOtherSkills {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-right: 20px; }
+    .otherSkills .listOtherSkills .box {
+      width: 33.33%;
+      padding-left: 20px;
+      float: left;
+      position: relative; }
+      .otherSkills .listOtherSkills .box .hold {
+        width: 100%;
+        padding: 20px 20px 0px 20px;
+        float: left;
+        position: relative;
+        border: 1px solid #a6a6a6; }
+      .otherSkills .listOtherSkills .box .text {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        font-size: 25px;
+        color: #191b1e;
+        text-align: center;
+        font-family: 'Gotham-Book'; }
+
+.contact {
+  width: 100%;
+  min-height: 312px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  background-color: #F7F5F5; }
+  .contact .titleD {
+    margin-bottom: 34px; }
+  .contact .textD {
+    margin-bottom: 50px;
+    text-align: center; }
+  .contact .socialHold {
+    display: table;
+    margin: auto;
+    margin-bottom: 40px; }
+    .contact .socialHold:after {
+      content: ""; }
+    .contact .socialHold .ico {
+      width: 65px;
+      height: 65px;
+      margin-right: 40px;
+      float: left;
+      position: relative; }
+      .contact .socialHold .ico:nth-last-child(1) {
+        margin-right: 0px; }
+      .contact .socialHold .ico:hover:before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.1);
+        content: ""; }
+    .contact .socialHold .facebook {
+      background: url("../img/sprite.png") no-repeat 0 0; }
+    .contact .socialHold .linkedin {
+      background: url("../img/sprite.png") no-repeat -66px 0; }
+    .contact .socialHold .instagram {
+      background: url("../img/sprite.png") no-repeat 0 -66px; }
+    .contact .socialHold .twitter {
+      background: url("../img/sprite.png") no-repeat -66px -66px; }
+  .contact .colFullAll {
+    text-align: center; }
+  .contact .linkMail {
+    margin: auto;
+    margin-bottom: 25px;
+    display: table;
+    font-size: 16px;
+    color: #31353b;
+    font-family: 'Gotham-Book'; }
+    .contact .linkMail:hover {
+      color: #1776ff; }
+
+.footer {
+  width: 100%;
+  height: 62px;
+  padding: 0px 20px;
+  position: relative;
+  background-color: #F7F5F5; }
+  .footer .signature {
+    width: 100%;
+    float: left;
+    text-align: right;
+    line-height: 62px;
+    font-size: 34px;
+    color: #d1d1d1;
+    font-family: 'EchinosParkScript'; }
+
+.jobs {
+  width: 100%;
+  min-height: 312px;
+  padding-top: 50px;
+  position: relative;
+  background-color: #FFFFFF; }
+  .jobs .listJobs {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-right: 20px; }
+  .jobs .titleD {
+    margin-bottom: 40px; }
+  .jobs .textD {
+    margin-bottom: 95px;
+    text-align: center; }
+  .jobs .boxHold {
+    width: 33.33%;
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 20px;
+    float: left; }
+  .jobs .box {
+    width: 100%;
+    float: left;
+    position: relative;
+    border: 1px solid #a6a6a6; }
+    .jobs .box .boxImg {
+      width: 100%;
+      margin-bottom: 10px;
+      line-height: 0px;
+      text-align: center; }
+      .jobs .box .boxImg img {
+        max-width: 100%; }
+    .jobs .box .name {
+      width: 100%;
+      float: left;
+      margin-bottom: 25px;
+      font-size: 16px;
+      color: #31353b;
+      font-family: 'Gotham-Book';
+      margin-bottom: 10px;
+      text-align: center; }
+
+@media screen and (max-width: 1100px) and (min-width: 641px) {
+  .contentAll {
+    width: 95%; }
+  .aboutMe .textHold {
+    max-width: 100%; }
+  .mySkills .skillsList .box {
+    width: 20%; } }
+
+@media screen and (max-width: 854px) and (min-width: 641px) {
+  .mySkills .skillsList .box {
+    width: 25%; }
+  .jobs .boxHold {
+    width: 25%; } }
+
+@media screen and (max-width: 640px) and (min-width: 0px) {
+  .btn {
+    float: initial;
+    display: table;
+    margin: auto; }
+  .firstPage .name {
+    height: 75px;
+    margin-top: -37.5px;
+    font-size: 60px;
+    -webkit-text-stroke-width: 0px; }
+  .firstPage .prof {
+    margin-bottom: -78px;
+    font-size: 16px; }
+  .contentAll {
+    width: 95%; }
+  .aboutMe {
+    padding-bottom: 40px; }
+  .aboutMe .holdCont {
+    padding-left: 0px; }
+  .aboutMe .img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    float: left;
+    position: relative; }
+  .mySkills .skillsList .skill .text {
+    margin-top: -11.5px;
+    height: 23px;
+    font-size: 19px; }
+  .mySkills .skillsList .box {
+    width: 50%; }
+  .otherSkills .listOtherSkills .box {
+    width: 100%;
+    margin-bottom: 20px; }
+  .contact .socialHold .ico {
+    margin-right: 10px; }
+  .jobs .boxHold {
+    width: 50%; } }
