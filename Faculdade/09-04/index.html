@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Daniel Fedatto - Front end developer</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="robots" content="all">
+    <meta name="RATING" content="GENERAL">
+    <meta name="REVISIT-AFTER" content="2 days">
+    <meta name="LANGUAGE" content="pt-br">
+    <meta name="GOOGLEBOT" content="INDEX, FOLLOW">
+    <meta name="author" content="Daniel Fedatto">
+    <meta name="copyright" content="Copyright (c) OWS">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
+    <meta name="application-name" content="&amp;nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="img/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="img/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="img/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="img/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="img/mstile-310x310.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="img/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicon-128x128.png" sizes="128x128">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+        <h1>Atividades JavaScript</h1>
+
+    <!-- Atividade 1: Mensagem de 'Olá Mundo' -->
+    <button onclick="exibirMensagem()">Exibir 'Olá Mundo'</button>
+
+    <!-- Atividade 2: Soma de 2 inteiros -->
+    <div>
+        <label for="num1">Número 1:</label>
+        <input type="number" id="num1">
+        <label for="num2">Número 2:</label>
+        <input type="number" id="num2">
+        <button onclick="exibirSoma()">Somar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <!-- Atividade 3: Alterar propriedade de um elemento por id -->
+    <div>
+        <button onclick="alterarPropriedadePorId()">Alterar propriedade por ID</button>
+        <p id="elementoId">Texto original</p>
+    </div>
+
+    <!-- Atividade 4: Alterar propriedade de um elemento por name -->
+    <div>
+        <button onclick="alterarPropriedadePorName()">Alterar propriedade por Name</button>
+        <p name="elementoName">Texto original</p>
+    </div>
+
+    <!-- Atividade 5: Alterar propriedade de um elemento por class -->
+    <div>
+        <button onclick="alterarPropriedadePorClass()">Alterar propriedade por Classe</button>
+        <p class="elementoClass">Texto original</p>
+    </div>
+    </main>
+    <footer>
+    </footer>
+  </body>
+    <script>
+        function exibirMensagem() {
+            alert('Olá Mundo');
+        }
+
+        // Atividade 2: Soma de 2 inteiros
+        function exibirSoma() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var soma = num1 + num2;
+            document.getElementById('resultado').textContent = 'A soma é: ' + soma;
+        }
+
+        // Atividade 3: Alterar propriedade de um elemento por id
+        function alterarPropriedadePorId() {
+            var elemento = document.getElementById('elementoId');
+            elemento.textContent = 'Texto alterado por ID';
+        }
+
+        // Atividade 4: Alterar propriedade de um elemento por name
+        function alterarPropriedadePorName() {
+            var elementos = document.getElementsByName('elementoName');
+            for (var i = 0; i < elementos.length; i++) {
+                elementos[i].textContent = 'Texto alterado por Name';
+            }
+        }
+
+        // Atividade 5: Alterar propriedade de um elemento por class
+        function alterarPropriedadePorClass() {
+            var elementos = document.getElementsByClassName('elementoClass');
+            for (var i = 0; i < elementos.length; i++) {
+                elementos[i].textContent = 'Texto alterado por Classe';
+            }
+        }
+    </script>
+</html>
